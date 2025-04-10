@@ -1,0 +1,37 @@
+{
+  "name": "@hamstudy/mt63-audio-worklet",
+  "version": "1.0.0",
+  "private": false,
+  "description": "An npm module for the MT63 audio worklet.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "audio",
+    "worklet",
+    "mt63"
+  ],
+  "files": [
+    "dist/",
+    "README.md",
+    "package.json"
+  ],
+  "author": "HamStudy.org team",
+  "license": "MIT",
+  "peerDependencies": {
+    "@hamstudy/mt63-wasm": "^1.5.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^4.40.0",
+    "rollup-plugin-delete": "^3.0.1",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.8.3"
+  }
+}
